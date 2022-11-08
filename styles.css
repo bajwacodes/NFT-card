@@ -93,37 +93,39 @@ img:hover{
     cursor: pointer;
 }
 
-@media (min-width: 0px) and (max-width: 295px)
+@media (max-width: 360px)
 {
-    .container{
-        padding: 0.7rem;
+    body{
+        min-width: 275px;
+    }
+
+    ul{
+        flex-direction: column;
+        justify-content: space-evenly;
     }
 
     .author-pic{
-        object-fit: fill;
+        object-fit: contain;
     }
 }
 
-@media (min-width: 600px) and (max-width: 1000px)
+@media (min-width: 470px) and (max-width: 700px)
 {
     .container{
-        width: 70%;
+       width: 75%;
     }
 }
 
-@media (min-width: 1001px) 
+@media (min-width: 701px)
 {
     .container{
-        width: 30%;
-        margin-top: 7rem;
-        margin-bottom: 7rem;
+       width: 60%;
+       margin-bottom: 5rem;
+    }
+
+    body{
+        max-width: 501px;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
-
-
-
-
-
-
-
-
